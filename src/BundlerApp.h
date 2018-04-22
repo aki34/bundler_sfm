@@ -20,6 +20,8 @@
 #ifndef __bundlerapp_h__
 #define __bundlerapp_h__
 
+#define __USE_CERES__
+
 #include "BaseApp.h"
 #include "LinkDirection.h"
 #include "TwoFrameModel.h"

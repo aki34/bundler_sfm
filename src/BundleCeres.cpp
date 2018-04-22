@@ -7,7 +7,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <float.h>
-#include <sys/time.h>
+//#include <sys/time.h>	//UNIX
+#include "time_unix.h"	//WINDOWS
 
 #include "matrix.h"
 #include "qsort.h"
@@ -19,6 +20,7 @@
 
 #include <ceres/ceres.h>
 #include "snavely_reprojection_error.h"
+#include "ceres/rotation.h"
 
 #include <omp.h>
 

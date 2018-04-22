@@ -5,6 +5,6 @@
 #
 # See RunBundler.sh for a full list of configuration options
 
-# USE_CERES=true # if uncommented, would enable the use of Ceres solver
+USE_CERES=true # if uncommented, would enable the use of Ceres solver
 #                # (assuming you have installed it and compiled it into
 #                # bundler -- see src/Makefile)

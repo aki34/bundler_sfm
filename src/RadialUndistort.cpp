@@ -18,6 +18,8 @@
 // #include "jpegcvt.h"
 #include "LoadJPEG.h"
 
+#define my_index strchr
+
 typedef struct
 {
     int image;
@@ -198,7 +200,7 @@ void ReadListFile(char *list_file, std::vector<std::string> &files)
         if (buf[strlen(buf)-1] == '\n')
             buf[strlen(buf)-1] = 0;
 
-        char *space = index(buf, ' ');
+        char *space = my_index(buf, ' ');
         if (space) *space = 0;
 
         files.push_back(std::string(buf));
